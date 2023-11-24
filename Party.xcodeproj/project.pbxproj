@@ -14,6 +14,10 @@
 		ED8E91752B10258D00F5DE66 /* CompactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E91742B10258D00F5DE66 /* CompactView.swift */; };
 		ED8E91772B1025A000F5DE66 /* RegularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E91762B1025A000F5DE66 /* RegularView.swift */; };
 		ED8E917A2B1025E400F5DE66 /* Active.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E91792B1025E400F5DE66 /* Active.swift */; };
+		ED8E917C2B102EB400F5DE66 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E917B2B102EB400F5DE66 /* DashboardView.swift */; };
+		ED8E917E2B102EC000F5DE66 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E917D2B102EC000F5DE66 /* AccountsView.swift */; };
+		ED8E91802B102ED000F5DE66 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E917F2B102ED000F5DE66 /* SettingsView.swift */; };
+		ED8E91822B10347200F5DE66 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E91812B10347200F5DE66 /* Appearance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		ED8E91742B10258D00F5DE66 /* CompactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactView.swift; sourceTree = "<group>"; };
 		ED8E91762B1025A000F5DE66 /* RegularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularView.swift; sourceTree = "<group>"; };
 		ED8E91792B1025E400F5DE66 /* Active.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Active.swift; sourceTree = "<group>"; };
+		ED8E917B2B102EB400F5DE66 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		ED8E917D2B102EC000F5DE66 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		ED8E917F2B102ED000F5DE66 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ED8E91812B10347200F5DE66 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +70,6 @@
 				ED8E91782B1025C500F5DE66 /* Models */,
 				ED8E916F2B1004B600F5DE66 /* Views */,
 				ED6E737E2B0F04070034D786 /* PartyApp.swift */,
-				ED6E73802B0F04070034D786 /* PartyView.swift */,
 				ED6E73842B0F04080034D786 /* Assets.xcassets */,
 				ED6E73862B0F04080034D786 /* Party.entitlements */,
 				ED6E738A2B0F04080034D786 /* Info.plist */,
@@ -82,32 +89,29 @@
 		ED8E916F2B1004B600F5DE66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ED8E91712B10252B00F5DE66 /* Regular */,
-				ED8E91702B10250800F5DE66 /* Compact */,
+				ED6E73802B0F04070034D786 /* PartyView.swift */,
+				ED8E91762B1025A000F5DE66 /* RegularView.swift */,
+				ED8E91742B10258D00F5DE66 /* CompactView.swift */,
+				ED8E91712B10252B00F5DE66 /* Shared */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		ED8E91702B10250800F5DE66 /* Compact */ = {
+		ED8E91712B10252B00F5DE66 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				ED8E91742B10258D00F5DE66 /* CompactView.swift */,
+				ED8E917B2B102EB400F5DE66 /* DashboardView.swift */,
+				ED8E917D2B102EC000F5DE66 /* AccountsView.swift */,
+				ED8E917F2B102ED000F5DE66 /* SettingsView.swift */,
 			);
-			path = Compact;
-			sourceTree = "<group>";
-		};
-		ED8E91712B10252B00F5DE66 /* Regular */ = {
-			isa = PBXGroup;
-			children = (
-				ED8E91762B1025A000F5DE66 /* RegularView.swift */,
-			);
-			path = Regular;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		ED8E91782B1025C500F5DE66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				ED8E91792B1025E400F5DE66 /* Active.swift */,
+				ED8E91812B10347200F5DE66 /* Appearance.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,8 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8E91772B1025A000F5DE66 /* RegularView.swift in Sources */,
+				ED8E91822B10347200F5DE66 /* Appearance.swift in Sources */,
+				ED8E91802B102ED000F5DE66 /* SettingsView.swift in Sources */,
+				ED8E917C2B102EB400F5DE66 /* DashboardView.swift in Sources */,
 				ED6E73812B0F04070034D786 /* PartyView.swift in Sources */,
 				ED6E737F2B0F04070034D786 /* PartyApp.swift in Sources */,
+				ED8E917E2B102EC000F5DE66 /* AccountsView.swift in Sources */,
 				ED8E91752B10258D00F5DE66 /* CompactView.swift in Sources */,
 				ED8E917A2B1025E400F5DE66 /* Active.swift in Sources */,
 			);

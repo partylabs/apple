@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PartyView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    ;
+
     var body: some View {
         switch horizontalSizeClass {
         case .some(.compact): CompactView()
